@@ -1,0 +1,19 @@
+.invalid__numbers {
+    width: 250px;
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 100px);
+}
+
+.invalid__numbers-title {
+    font-weight: bold;
+}
+
+.error {
+    display: block;
+    margin-right: 5px;
+}
+
+.error__num {
+    color: red;
+}

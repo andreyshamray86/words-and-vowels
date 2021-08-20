@@ -1,0 +1,36 @@
+.form {
+    width: 70%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form__input {
+    margin-right: 10px;
+    width: 30%;
+    height: 20px;
+    border: 1px solid #000;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.form__input:focus {
+    outline: none;
+    border-width: 2px;
+}
+
+.form__btn {
+    background-color: #fff;
+    height: 24px;
+    border: 1px solid #000;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.form__btn:hover {
+    background-color: #ecebeb;
+}
+
+.form__btn:focus {
+    outline: none;
+    border-width: 2px;
+    background-color: #ecebeb;
+}
