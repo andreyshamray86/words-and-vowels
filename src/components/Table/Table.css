@@ -10,18 +10,5 @@ th {
     padding: 5px;
 }
 
-td {
-    padding: 7px;
-}
 
-.table__text {
-    width: 50%;
-}
 
-.table__words {
-    width: 10%;
-}
-
-.table__vowels {
-    width: 10%;
-}

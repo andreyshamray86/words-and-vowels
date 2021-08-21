@@ -1,22 +1,14 @@
-.invalid__numbers {
+.error__block {
     width: 250px;
     position: absolute;
-    top: -80px;
+    top: 30px;
     left: calc(50% - 125px);
     padding: 5px;
     border: 1px solid #e26a6a;
     box-shadow: 4px 4px 8px 0px rgba(226, 106, 106, 0.2);
 }
 
-.invalid__numbers-title {
+.error__title {
     font-weight: bold;
-}
-
-.error {
-    display: block;
-    margin-right: 5px;
-}
-
-.error__num {
     color: #e26a6a;
 }

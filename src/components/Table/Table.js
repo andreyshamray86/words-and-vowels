@@ -1,5 +1,7 @@
 import React from 'react'
 
+import TableRow from '../TableRow/TableRow'
+
 import './Table.css'
 
 const Table = () => {
@@ -13,13 +15,9 @@ const Table = () => {
                 </tr>
             </thead>
             <tbody>
-                <tr align="center">
-                    <td className='table__text'>fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</td>
-                    <td className='table__words'>10</td>
-                    <td className='table__vowels'>22</td>
-                </tr>
+                <TableRow/>
             </tbody>
-</table>
+        </table>
     )
 }
 

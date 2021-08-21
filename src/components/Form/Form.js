@@ -2,16 +2,22 @@ import React, {useContext} from 'react'
 import { StringsContext} from '../../context/StringsContext'
 
 import InvalidNumbers from '../InvalidNumbers/InvalidNumbers'
+import Error from '../Error/Error'
 import './Form.css'
 
 const Form = () => {
-    const [id, setId, getStrings, strings] = useContext(StringsContext)
+    const [id, setId, getStrings,,, error, setError] = useContext(StringsContext)
     let invalid = [];
+    
     const inputHandler = (e) => {
         setId(e.target.value); 
+        
+        // removing error message before another request
+        setError('');
     }
 
     const clickHandler = () => {
+        // getting strings from server
         getStrings();
     }
     
@@ -24,6 +30,7 @@ const Form = () => {
     
     return (
         <div className='form'>
+            {error && <Error/>}
             {invalid.length > 0 && <InvalidNumbers invalid={invalid}/>}
             <input 
             type="text" 

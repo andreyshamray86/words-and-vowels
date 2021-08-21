@@ -2,10 +2,11 @@ import React from 'react'
 
 import './InvalidNumbers.css'
 
+
+// component to show user wrong typed number
 const InvalidNumbers = ({invalid}) => {
     return (
         <div className='invalid__numbers'>
-            
             <p className='invalid__numbers-title'>Введены неверные числа: </p>
             {
                 invalid.map(num => {
